@@ -140,7 +140,7 @@ def compute_feature(block):
 
     # distortions disturb the fairly regular structure of natural images.
     # This deviation can be captured by analyzing the sample distribution of
-    # the products of pairs of adjacent coefficients computed along
+    # the products of paired of adjacent coefficients computed along
     # horizontal, vertical and diagonal orientations.
     shifts = [[0, 1], [1, 0], [1, 1], [1, -1]]
     for shift in shifts:

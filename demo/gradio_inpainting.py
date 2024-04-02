@@ -263,14 +263,14 @@ class InpaintingGradio:
                 with gr.Column(visible=False) as output_col:
                     input_image = gr.Image(
                         image_mode='RGB',
-                        tool='sketch',
+                        # tool='sketch',
                         type='filepath',
                         label='Input image')
                     infer_button = gr.Button('INFER')
-                    infer_button.style(full_width=False)
+                    # infer_button.style(full_width=False)
                     output_image = gr.Image(
                         label='Output image', interactive=False)
-                    output_image.style(height=500)
+                    # output_image.style(height=500)
                     infer_button.click(
                         self.infer, inputs=input_image, outputs=output_image)
 
