@@ -198,7 +198,7 @@ class DataSample(BaseDataElement):
     }
 
     def set_predefined_data(self, data: dict) -> None:
-        """set or change pre-defined key-value pairs in ``data_field`` by
+        """set or change pre-defined key-value paired in ``data_field`` by
         parameter ``data``.
 
         Args:
@@ -219,7 +219,7 @@ class DataSample(BaseDataElement):
         self.set_tensor_data(data)
 
     def set_tensor_data(self, data: dict) -> None:
-        """convert input data to tensor, and then set or change key-value pairs
+        """convert input data to tensor, and then set or change key-value paired
         in ``data_field`` by parameter ``data``.
 
         Args:
